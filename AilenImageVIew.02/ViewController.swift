@@ -10,11 +10,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var alienImageviewer: UIImageView!
+    @IBOutlet weak var countLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        alienImageviewer.image  = UIImage(named:"image1.png")
+        //countLabel.text = String(count)
+       
     }
+   
+    @IBAction func buttonPressed(_sender: Any) {
+    
+    alienImageviewer.image = UIImage(named: "frame\(count).png)
+    countLabal.text = "frame\(count).png"
+        print("Button pressed!")
+        }
 
+    
 
-}
+        
+
+  
+
 
